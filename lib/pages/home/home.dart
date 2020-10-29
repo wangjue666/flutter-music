@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import "package:hello/util/screen_util.dart";
 import "package:hello/pages/home/header.dart";
+import 'package:hello/pages/home/banner.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               children: [
                 Header(),
+                MyBanner(),
               ],
             )));
   }
