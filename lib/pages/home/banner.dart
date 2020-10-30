@@ -20,7 +20,7 @@ class MyBanner extends HookWidget {
           child: CarouselSlider(
             options: CarouselOptions(
                 height: screen.calc(268),
-                autoPlay: true,
+                autoPlay: false,
                 autoPlayInterval: Duration(seconds: 3),
                 autoPlayAnimationDuration: Duration(milliseconds: 500),
                 autoPlayCurve: Curves.easeInOut,
