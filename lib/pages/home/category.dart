@@ -24,7 +24,8 @@ class Category extends StatelessWidget {
                   .map(
                     (item) => GestureDetector(
                         onTap: () {
-                          print(item);
+                          Navigator.pushNamed(context, '/square',
+                              arguments: {'from': item});
                         },
                         child: Container(
                             margin: EdgeInsets.only(right: screen.calc(29)),
