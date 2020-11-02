@@ -61,6 +61,12 @@ flutter:
     - assets/cate_22.png
     - assets/cate_32.png
     - assets/cate_33.png
+    - tmp_cover_1.jpg
+    - tmp_cover_2.jpg
+    - tmp_cover_3.jpg
+    - tmp_cover_4.jpg
+    - tmp_cover_5.jpg
+    - tmp_cover_6.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
