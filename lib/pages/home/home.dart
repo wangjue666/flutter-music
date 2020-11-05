@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                         'title': 'dddd'
                       },
                     ]),
-                RecommendList(),
+                RecommendList(title: '根据xx推荐'),
               ],
             )),
       ),
