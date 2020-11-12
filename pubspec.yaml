@@ -67,6 +67,18 @@ flutter:
     - tmp_cover_4.jpg
     - tmp_cover_5.jpg
     - tmp_cover_6.jpg
+
+    - assets/icon-group.png
+    - assets/icon-music.png
+    - assets/icon-music-acc.png
+    - assets/icon-person.png
+    - assets/icon-video.png
+
+    - assets/icon-group-b.png
+    - assets/icon-music-b.png
+    - assets/icon-music-acc-b.png
+    - assets/icon-person-b.png
+    - assets/icon-video-b.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
