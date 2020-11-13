@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello/util/screen_util.dart';
+import 'package:hello/widgets/global_navigation_bar.dart';
 
 class SquarePage extends StatelessWidget {
   @override
@@ -15,6 +16,9 @@ class SquarePage extends StatelessWidget {
         child: Column(
           children: [Text('广场')],
         ),
+      ),
+      bottomNavigationBar: GlobalNavigationBar(
+        value: 2,
       ),
     );
   }
