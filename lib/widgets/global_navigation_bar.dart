@@ -59,37 +59,42 @@ class GlobalNavigationBar extends HookWidget {
   Widget build(BuildContext context) {
     final screen = Screen(context);
 
-    return Container(
-      padding: EdgeInsets.only(top: screen.calc(10)),
-      height: screen.calc(98),
-      decoration: BoxDecoration(
-        color: Color(0x66ffffff),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: navigationItems
-            .asMap()
-            .map((index, item) => MapEntry(
-                index,
-                NavigationBarItem(
-                  img: item['img'],
-                  activeImg: item['activeImg'],
-                  title: item['title'],
-                  active: value == index,
-                  onTap: () {
-                    switch (index) {
-                      case 0:
-                        Navigator.pushNamed(context, '/home');
-                        break;
-                      case 2:
-                        Navigator.pushNamed(context, '/square');
-                        break;
-                    }
-                  },
-                )))
-            .values
-            .toList(),
-      ),
+    return Hero(
+      tag: '_bottom_nav_bar__1__',
+      child: DefaultTextStyle(
+          style: TextStyle(inherit: false),
+          child: Container(
+            padding: EdgeInsets.only(top: screen.calc(10)),
+            height: screen.calc(98),
+            decoration: BoxDecoration(
+              color: Color(0x66ffffff),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: navigationItems
+                  .asMap()
+                  .map((index, item) => MapEntry(
+                      index,
+                      NavigationBarItem(
+                        img: item['img'],
+                        activeImg: item['activeImg'],
+                        title: item['title'],
+                        active: value == index,
+                        onTap: () {
+                          switch (index) {
+                            case 0:
+                              Navigator.pushNamed(context, '/home');
+                              break;
+                            case 2:
+                              Navigator.pushNamed(context, '/square');
+                              break;
+                          }
+                        },
+                      )))
+                  .values
+                  .toList(),
+            ),
+          )),
     );
   }
 }
@@ -142,7 +147,7 @@ class NavigationBarItem extends StatelessWidget {
                   child: Image.asset(active ? activeImg : img,
                       width: screen.calc(30), height: screen.calc(30))),
             ),
-            Text('发现',
+            Text(title,
                 style: TextStyle(
                   fontSize: screen.calc(17),
                   color: active ? Color(0xffff1f14) : Color(0xff969696),
